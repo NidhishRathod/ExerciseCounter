@@ -17,36 +17,29 @@ This project is an AI-powered workout and diet planner that provides personalize
 - transformers
 - Mediapipe
 - OpenCV
-- Tkinter (usually comes pre-installed with Python)
-- Other dependencies can be installed using the `requirements.txt` file.
+- Tkinter 
 
 ## Installation
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/ai-workout-diet-planner.git
-    cd ai-workout-diet-planner
+1. Create a virtual environment and activate it:
     ```
-
-2. Create a virtual environment and activate it:
-    ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
+2. Install the required dependencies:
+    ```
+    pip install torch torchvision torchaudio transformers mediapipe opencv-python
     ```
 
 4. Download the pre-trained GPT-2 model and tokenizer:
-    ```bash
+    ```
     python -c "from transformers import GPT2LMHeadModel, GPT2Tokenizer; model = GPT2LMHeadModel.from_pretrained('gpt2'); tokenizer = GPT2Tokenizer.from_pretrained('gpt2')"
     ```
 
 5. Run the application:
-    ```bash
-    python app.py
+    ```
+    python Bot.py
     ```
 
 ## Usage
